@@ -6,7 +6,7 @@ const bot = new Telegraf(process.env.TELEGRAM_BOT_API_KEY);
 
 bot.on(message('text'), async (ctx) => {
     const keyboard = Markup.inlineKeyboard([
-        Markup.button.webApp('Open TWA', 'https://192.168.1.106:5173/tontune-telegram-web-app/'),
+        Markup.button.webApp('Open TWA', process.env.WEB_APP_URL),
     ]);
 
     await ctx.reply('Click the button to open TWA:', keyboard);
