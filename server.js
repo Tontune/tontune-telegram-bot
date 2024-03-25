@@ -11,7 +11,7 @@ app.use(express.json());
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const WEB_APP_URL = process.env.WEB_APP_URL;
 
-const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
+const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
 
 let chatId = 500;
 
@@ -19,7 +19,7 @@ bot.on("message", (msg) => {
   chatId = msg.chat.id;
 });
 
-bot.onText(/\/*/, (msg) => {
+bot.onText(/[\s\S]*/, (msg) => {
   const chatId = msg.chat.id;
 
   // Replace 'path/to/your/image.jpg' with the actual path to your image file
