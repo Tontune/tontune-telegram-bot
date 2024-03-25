@@ -11,8 +11,7 @@ app.use(express.json());
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const WEB_APP_URL = process.env.WEB_APP_URL;
 
-// Create a bot that uses 'polling' to fetch new updates
-const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
+const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
 let chatId = 500;
 
