@@ -30,7 +30,7 @@ bot.onText(/[\s\S]*/, (msg) => {
     web_app: { url: WEB_APP_URL },
   };
   const button2 = {
-    text: "Telegram Channel",
+    text: "TG Channel",
     url: "https://t.me/TontuneApp",
   };
   const button3 = {
