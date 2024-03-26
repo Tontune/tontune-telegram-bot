@@ -33,9 +33,13 @@ bot.onText(/[\s\S]*/, (msg) => {
     text: "Telegram Channel",
     url: "https://t.me/TontuneApp",
   };
+  const button3 = {
+    text: "Landing Page",
+    url: "https://tontune.xyz/",
+  };
 
   // Create an array of inline button rows (each row is an array of button options)
-  const inlineButtons = [[button1, button2]];
+  const inlineButtons = [[button1, button2, button3]];
 
   const buttonOptions = {
     reply_markup: {
