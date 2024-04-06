@@ -8,8 +8,8 @@ dotenv.config();
 app.use(cors());
 app.use(express.json());
 
-const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
-const WEB_APP_URL = process.env.WEB_APP_URL;
+const TELEGRAM_BOT_TOKEN = "6636461019:AAF0CTuzZiATCfPva7-Ukom4PsZxNwge5M0";
+const WEB_APP_URL = "https://tontune.github.io/tontune-telegram-web-app/";
 
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN, { polling: true });
 
