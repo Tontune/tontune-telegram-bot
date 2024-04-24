@@ -24,7 +24,7 @@ bot.onText(/[\s\S]*/, (msg) => {
 
   // Replace 'path/to/your/image.jpg' with the actual path to your image file
   const message =
-    "🎉 Welcome to Tontune Demo! 🎵\nPlease connect wallet first\n\n🚀 Here's what you can do with Tontune:\n- 🎤 Discover new artists and explosive tracks.\n- 🏆 Participate in music challenges.\n- 💎 Collect and trade exclusive music NFTs.";
+    "🎉 Welcome to Tontune Demo! 🎵\nPlease connect wallet first\n\nHere's what you can do with Tontune:\n- 🎤 Discover new artists and explosive tracks.\n- 🏆 Participate in music challenges.\n- 💎 Collect and trade exclusive music NFTs.\n\n❗Note: In this demo version, the feature to mint actual tokens is not yet available. We are excited to roll out this functionality in the near future, allowing you to fully engage with all aspects of Tontune. Keep an eye on updates as we enhance your music experience!";
   const button1 = {
     text: "Open Tontune",
     web_app: { url: WEB_APP_URL },
